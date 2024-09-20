@@ -13,7 +13,7 @@ A simple React Framerwork web application to display a data of top rated movies 
 
 ## Screenshot
 
-![Home Page](https://github.com/ps3coder/Country_list_Angular_frame/blob/main/Screenshot%202024-09-13%20223657.png)
+![Home Page](https://github.com/ps3coder/Movie_Database_Web/blob/main/SC.png)
 
 
 ## Tech Stack
