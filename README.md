@@ -35,12 +35,22 @@ A simple React Framerwork web application to display a data of top rated movies 
 Run `npm install`  `npm start` for a development server. Navigate to `http://localhost:3000/`. The application will automatically reload if you change any of the source files.
 
 ## Other Important Documents:
-[API](https://dummyapi.online/api/movies)
-[React Docs](https://legacy.reactjs.org/docs/create-a-new-react-app.html)
-[API DOCS](https://dummyapi.online/)
-[CSS](https://freefrontend.com/)
-[Components & Icons](https://mui.com/) 
-[Reference IMDB](https://www.imdb.com/chart/top/?sort=rank%2Casc) 
+[API](https://dummyapi.online/api/movies)   |
+
+
+[React Docs](https://legacy.reactjs.org/docs/create-a-new-react-app.html)  |
+
+
+[API DOCS](https://dummyapi.online/)    |
+
+
+[CSS](https://freefrontend.com/)   |
+
+
+[Components & Icons](https://mui.com/)    |
+
+
+[Reference IMDB](https://www.imdb.com/chart/top/?sort=rank%2Casc)    |
 
 
 
