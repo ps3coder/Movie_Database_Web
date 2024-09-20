@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 24px;
+  font-weight: 80%;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toggle-view {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #0073bb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-view:hover {
+  background-color: #005f9c;
+}
+
+.movie-list.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: all 0.5s ease; 
+}
+
+.movie-item {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.005);
+}
+
+
+.movie-poster img {
+  width: 80px;
+  height: 120px;
+  border-radius: 5px;
+  transition: transform 0.3s ease; 
+}
+
+.movie-poster img:hover {
+  transform: scale(1.1); 
+}
+
+.movie-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating span {
+  font-size: 14px;
+  color: #ffcc00;
+}
+
+.rating a {
+  color: #0073bb;
+  text-decoration: none;
+}
+
+.rating a:hover {
+  text-decoration: underline;
+}
+
+.info-icon {
+  font-size: 20px;
+  color: #0073bb;
+  cursor: pointer;
+  margin: 25px;
+}
+
+.info-icon:hover {
+  color: #005f9c;
+}
+
+.info-icon a {
+  text-decoration: none;
+}
+
+.movie-list.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  transition: all 0.5s ease; 
+}
+
+.movie-item.grid-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-.App-link {
-  color: #61dafb;
+.movie-item.grid-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.movie-list {
+      transform: scale(1.5);
+  animation: fadeIn 1s forwards ease-in-out;    
+}
+
+@keyframes fadeIn {
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: scale(1.001);
   }
+}
+.search-bar {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+.header{
+    padding: 20px 20px ;
+    margin: 20px;
+    display: block;
 }
