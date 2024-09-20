@@ -23,7 +23,7 @@ A simple React Framerwork web application to display a data of top rated movies 
 - **Styling**: CSS for page styling
 
 ## Clone the repository
-
+`https://github.com/ps3coder/Movie_Database_Web.git`
 
 
 ## Navigate into the project directory
